@@ -2123,7 +2123,7 @@ img,video {
     border-style: solid
 }
 
-.divide-\[\#F4E1B9\]>:not([hidden])~:not([hidden]) {
+.divide-\[\#40052b\]>:not([hidden])~:not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgb(244 225 185 / var(--tw-divide-opacity))
 }
@@ -2442,7 +2442,7 @@ img,video {
     border-color: rgb(59 113 202 / var(--tw-border-opacity))
 }
 
-.border-\[\#F4E1B9\] {
+.border-\[\#40052b\] {
     --tw-border-opacity: 1;
     border-color: rgb(244 225 185 / var(--tw-border-opacity))
 }
@@ -2590,7 +2590,7 @@ img,video {
     background-color: rgb(227 176 176 / var(--tw-bg-opacity))
 }
 
-.bg-\[\#F4E1B9\] {
+.bg-\[\#40052b\] {
     --tw-bg-opacity: 1;
     background-color: rgb(244 225 185 / var(--tw-bg-opacity))
 }
@@ -2625,7 +2625,7 @@ img,video {
     background-color: rgb(238 238 238 / var(--tw-bg-opacity))
 }
 
-.bg-\[\#f4e1b9\] {
+.bg-\[\#40052b\] {
     --tw-bg-opacity: 1;
     background-color: rgb(244 225 185 / var(--tw-bg-opacity))
 }
@@ -3332,7 +3332,7 @@ img,video {
     color: rgb(232 35 56 / var(--tw-text-opacity))
 }
 
-.text-\[\#F4E1B9\] {
+.text-\[\#40052b\] {
     --tw-text-opacity: 1;
     color: rgb(244 225 185 / var(--tw-text-opacity))
 }
@@ -3818,7 +3818,7 @@ img,video {
 }
 
 .tracks-topics::-webkit-scrollbar-thumb,.tracks-body-text::-webkit-scrollbar-thumb {
-    background-color: #f4e1b9;
+    background-color: #40052b;
     background-image: url("data:image/svg+xml,%3csvg%20width='7'%20height='14'%20viewBox='0%200%207%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%202H7M0%207H7M0%2012.5H7'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e");
     background-position: center;
     background-repeat: no-repeat;
@@ -3895,7 +3895,8 @@ nav ul li a {
 }
 
 .navlist {
-    z-index: 20
+    z-index: 20;
+    color: #fff
 }
 
 .navlist a {
@@ -3903,7 +3904,7 @@ nav ul li a {
 }
 
 .navlist a:hover {
-    color: #fff
+    color: #700b0b
 }
 
 .dropdown_item-1 {
@@ -4342,7 +4343,7 @@ img {
 }
 
 body {
-    background-color: #f4e1b9
+    background-color: #40052b
 }
 
 .sponsor-heading {
