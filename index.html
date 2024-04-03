@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/webp" href="/logo.webp"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta property="og:image" content="https://i.imgur.com/0GssqfL.png">
+        <meta property="og:title" content="Rebase<01>"/>
+        <meta property="og:description" content="A hackathon with a hint of mischief and a dash of innovation"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://rebase01.tech/"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"/>
+        <title>
+            Rebase <01>
+        </title>
+        <script type="module" crossorigin src="/index.js"></script>
+        <link rel="stylesheet" crossorigin href="/style.css">
+    </head>
+    <!-- preloader (broken) -->
+    <!-- <video class="fixed min-w-full h-auto z-[10000]" autoplay loop>
+  <source src="./public/preloader.mov">
+</video> -->
+    <body class="bg-[#f4e1b9] ">
+        <!-- div for paper effect. -->
+        <div class="w-full fixed   h-[100%] z-[10000] bg-repeat " style="pointer-events: none;">
+            <!-- <img src='/assets/2k24 (1).png' alt="" class=" w-screen object-cover bg-repeat"> -->
+        </div>
+        <div class="w-[80%] lg:w-[70%] m-auto ">
+            <!-- Navbar and logo -->
+            <div class="flex justify-center w-full">
+                <!-- logo -->
+                <div class="w-[15%] hidden md:block ">
+                    <a href="#">
+                        <img class="shrink-1" src="/assets/2k24 (1).png" alt="logro" style="width: 90px; height: 90px;">
+                    </a>
+                   
+                </div>
+                
+                <!-- navbar -->
+                <div class="w-screen flex pt-4 md:justify-end justify-between mx-auto md:pt-1 md:hidden  ">
+                    <div class="flex flex-row md:hidden w-[57vw] pl-[2rem]">
+                        <img src="/assets/2k24 (1).png" alt="" srcset="" class="extrasmall:h-[3rem]  sm:h-[4rem]  md:w-[4.5rem] md:h-[4.5rem]"/>
+                        <div class="border-[0.001rem] h-[7rem] bg-black border-black m-2 mr-7 extrasmall:h-[3rem] extrasmall:mr-3 sm:h-[4rem] sm:mr-4 md:h-[3rem]"></div>
+                        <img src="/assets/iste2.png" alt="" srcset="" class="w-[9rem] h-[4rem] extrasmall:h-[4rem] extrasmall:w-[4rem] extrasmall:mt-1 sm:h-[4rem] sm:w-[4rem] sm:mt-1 md:w-[4.5 rem] md:h-[4.5rem]"/>
+                        <img src="/assets/gfg2.png" alt="" srcset="" class="w-[9rem] h-[4rem] extrasmall:h-[4rem] extrasmall:w-[4rem] extrasmall:mt-1 sm:h-[4rem] sm:w-[rem] sm:mt-1 md:w-[4.5rem] md:h-[4.5rem]"/>
+                    </div>
+                    <div class="md:hidden flex items-center pl-[11rem]">
+                        <button type="button" class="mobile-menu-button inline-flex items-center p-2 w-14 h-14 justify-center text-sm md:hidden" aria-controls="navbar-default" aria-expanded="false">
+                            <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" width="28" height="7" fill="#DE533C" fill-opacity="0.56"/>
+                                <rect x="2" y="10" width="28" height="6" fill="#DE533C" fill-opacity="0.56"/>
+                                <rect x="2" y="19" width="28" height="7" fill="#DE533C" fill-opacity="0.56"/>
+                                <rect x="0.5" y="3.54346" width="24.5652" height="5.08696" stroke="black"/>
+                                <rect x="0.5" y="13.2826" width="24.5652" height="5.08696" stroke="black"/>
+                                <rect x="0.5" y="22.413" width="24.5652" height="5.08696" stroke="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:block p-2 ">
+                    <nav class="relative after:absolute after:top-[10%] after:left-[-1%] after:right-[1%] after:bottom-[-10%] shrink-0">
+                        <ul class="flex 2xl:gap-12 xl:gap-12 lg:gap-4 gap-3 2xl:text-lg xl:text-md lg:text-sm md:text-xs sm:text-[0.65rem] font-bold 2xl:py-6 md:py-4 sm:py-3 sm:px-6 2xl:px-8 md:px-6 xl:px-8 bg-[#de533c]">
+                            <li class="navlist">
+                                <a href="#about">Innovate</a>
+                            </li>
+                            <li class="navlist">
+                                <a href="#prizes">PRIZES</a>
+                            </li>
+                            <li class="navlist">
+                                <a href="#sponsors">SPONSORS</a>
+                            </li>
+                            <li class="navlist">
+                                <a href="#timeline">ISTE-SRM</a>
+                            </li>
+                            <li class="navlist">
+                                <a href="#tracks">GFG-SRM</a>
+                            </li>
+                           
+                            
+                            <li class="navlist">
+                                <a href="#faqs">FAQS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- navbar normal screens -->
+            </div>
+            <div class="dropdown_item-1 bg-[#48727E] sm:w-72 extrasmall:right-[14vw] border-4 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0)] hidden mt-1 mobile-menu sm:right-[5.2rem] absolute z-[100] md:hidden">
+                <div class="divide-[#F4E1B9] divide-y-2 divide-solid flex flex-col w-64 p-4 gap-y-2">
+                    <div class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold">
+                        <a href="#about">INNOVATE</a>
+                    </div>
+                    <div class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold">
+                        <a href="#prizes">PRIZES</a>
+                    </div>
+                    <div class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold">
+                        <a href="#timeline">ISTE</a>
+                    </div>
+                    <div class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold">
+                        <a href="#tracks">GFG</a>
+                    </div>
+                    
+                    <div class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold">
+                        <a href="#sponsors">SPONSORS</a>
+                    </div>
+                    <div class="text-white fonto p-2 hover:text-gray-400 hover:text-xl hover:font-bold">
+                        <a href="#faqs">FAQS</a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const btn = document.querySelector('button.mobile-menu-button');
+                const menu = document.querySelector('.mobile-menu');
+
+                btn.addEventListener('click', ()=>{
+                    menu.classList.toggle('hidden');
+                }
+                );
+            </script>
+            <!-- LANDING PAGE -->
+            <section id="home" class="h-fit w-full">
+                <!-- Hero text mobile -->
+                <div class="sm:hidden">
+                    <img class="w-full h-80" src="/assets/herotext-S3GH0E-9.png" alt="">
+                </div>
+                
+                <!-- Hero Text, Images and socials -->
+                <div id="compland" class="-space-y-20 md:-space-y-24 lg:-space-y-28 xl:-space-y-32 2xl:-space-y-40">
+                    <!-- Hero Text -->
+                    <img class="z-50" src="/assets/herotext-S3GH0E-9.png" alt="">
+                    <div class="flex justify-center -space-x-6 md:-space-x-7 lg:-space-x-8 xl:-space-x-10 2xl:-space-x-12">
+                        <div class="relative">
+                            <img class="w-full" src="/assets/socialcomp-mvS3qpEJ.png" alt="">
+                            <div id="socialcompu" class="absolute  sm:inset-6">
+                                <ul class="">
+                                    <li class="">
+                                        <a href="https://iste.com">
+                                            <img class="sm:w-[80%]" src="/assets/iste2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="https://gfg.com">
+                                            <img class="sm:w-[80%]" src="/assets/gfg2.png" alt="">
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="sm:my-6 lg:my-7 2xl:my-8">
+                                        <a href="https://twitter.com/">
+                                            <img class="sm:w-[30%]" src="data:image/svg+xml,%3csvg%20width='29'%20height='36'%20viewBox='0%200%2029%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M25.2676%204.33032L27.7414%204.35713L3.45079%2031.9272L0.975378%2031.9478L25.2676%204.33032Z'%20fill='black'/%3e%3cmask%20id='path-2-inside-1_145_7'%20fill='white'%3e%3cpath%20d='M1.19925%204.23545L9.51072%204.27967L28.7117%2031.6366L20.4225%2031.6366L1.19925%204.23545Z'/%3e%3c/mask%3e%3cpath%20d='M1.19925%204.23545L9.51072%204.27967L28.7117%2031.6366L20.4225%2031.6366L1.19925%204.23545Z'%20fill='white'/%3e%3cpath%20d='M1.19925%204.23545L1.45809%20-9.12119L-24.1114%20-9.25722L-8.9886%2012.2991L1.19925%204.23545ZM9.51072%204.27967L19.697%20-3.78628L16.0069%20-9.04379L9.76956%20-9.07698L9.51072%204.27967ZM28.7117%2031.6366L28.5164%2044.9934L53.9339%2044.9934L38.898%2023.5707L28.7117%2031.6366ZM20.4225%2031.6366L10.2347%2039.7003L13.9481%2044.9934L20.2272%2044.9934L20.4225%2031.6366ZM0.940413%2017.5921L9.25188%2017.6363L9.76956%20-9.07698L1.45809%20-9.12119L0.940413%2017.5921ZM-0.675528%2012.3456L18.5255%2039.7026L38.898%2023.5707L19.697%20-3.78628L-0.675528%2012.3456ZM28.907%2018.2798L20.6178%2018.2798L20.2272%2044.9934L28.5164%2044.9934L28.907%2018.2798ZM30.6104%2023.573L11.3871%20-3.82822L-8.9886%2012.2991L10.2347%2039.7003L30.6104%2023.573Z'%20fill='black'%20mask='url(%23path-2-inside-1_145_7)'/%3e%3c/svg%3e" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="sm:my-6 lg:my-7 2xl:my-8">
+                                        <a href="https://www.youtube.com/">
+                                            <img class="sm:w-[40%]" src="data:image/svg+xml,%3csvg%20width='46'%20height='29'%20viewBox='0%200%2046%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='1.03735'%20y='1.48535'%20width='44.4151'%20height='26.9057'%20rx='9.5'%20fill='%23E62117'%20stroke='black'/%3e%3cpath%20d='M27.2591%2020.9946L16.8851%2015.2117L27.2591%209.42877V20.9946Z'%20fill='white'%20stroke='black'/%3e%3c/svg%3e" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="sm:my-6 lg:my-7 2xl:my-8">
+                                        <a href="https://www.instagram.com">
+                                            <img class="sm:w-[40%]" src="data:image/svg+xml,%3csvg%20width='50'%20height='49'%20viewBox='0%200%2050%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.86627%2011.1605C4.86627%206.03649%208.85882%201.88263%2013.7839%201.88263H40.5367C45.4617%201.88263%2049.4543%206.03649%2049.4543%2011.1605V38.9942C49.4543%2044.1183%2045.4617%2048.2721%2040.5367%2048.2721H13.7839C8.85881%2048.2721%204.86627%2044.1183%204.86627%2038.9942V11.1605Z'%20fill='url(%23paint0_radial_8_241)'/%3e%3cpath%20d='M37.3518%2025.7401C37.3518%2031.5961%2032.7889%2036.3434%2027.1603%2036.3434C21.5316%2036.3434%2016.9687%2031.5961%2016.9687%2025.7401C16.9687%2019.884%2021.5316%2015.1368%2027.1603%2015.1368C32.7889%2015.1368%2037.3518%2019.884%2037.3518%2025.7401Z'%20fill='url(%23paint1_radial_8_241)'/%3e%3cpath%20d='M40.5367%2011.1605C40.5367%2011.8925%2039.9663%2012.4859%2039.2627%2012.4859C38.5591%2012.4859%2037.9888%2011.8925%2037.9888%2011.1605C37.9888%2010.4285%2038.5591%209.83512%2039.2627%209.83512C39.9663%209.83512%2040.5367%2010.4285%2040.5367%2011.1605Z'%20fill='url(%23paint2_radial_8_241)'/%3e%3cpath%20d='M36.0779%209.61421C36.0779%2010.3462%2035.5075%2010.9396%2034.8039%2010.9396C34.1003%2010.9396%2033.53%2010.3462%2033.53%209.61421C33.53%208.8822%2034.1003%208.28879%2034.8039%208.28879C35.5075%208.28879%2036.0779%208.8822%2036.0779%209.61421Z'%20fill='black'/%3e%3cpath%20d='M1.90747%209.61421C1.90747%205.26204%205.28388%201.8363%209.32507%201.8363H36.0779C40.119%201.8363%2043.4954%205.26204%2043.4954%209.61421V37.4479C43.4954%2041.8001%2040.119%2045.2258%2036.0779%2045.2258H9.32507C5.28388%2045.2258%201.90747%2041.8001%201.90747%2037.4479V9.61421ZM31.393%2024.1938C31.393%2029.2779%2027.4462%2033.2971%2022.7015%2033.2971C17.9567%2033.2971%2014.0099%2029.2779%2014.0099%2024.1938C14.0099%2019.1096%2017.9567%2015.0905%2022.7015%2015.0905C27.4462%2015.0905%2031.393%2019.1096%2031.393%2024.1938ZM22.7015%2036.2971C29.214%2036.2971%2034.393%2030.8217%2034.393%2024.1938C34.393%2017.5658%2029.214%2012.0905%2022.7015%2012.0905C16.189%2012.0905%2011.0099%2017.5658%2011.0099%2024.1938C11.0099%2030.8217%2016.189%2036.2971%2022.7015%2036.2971ZM34.5779%209.61421C34.5779%209.58551%2034.5903%209.54631%2034.6233%209.51196C34.6573%209.47657%2034.722%209.43962%2034.8039%209.43962C34.8859%209.43962%2034.9505%209.47657%2034.9846%209.51196C35.0176%209.54632%2035.03%209.58552%2035.03%209.61421C35.03%209.6429%2035.0176%209.68209%2034.9846%209.71645C34.9505%209.75185%2034.8859%209.78879%2034.8039%209.78879C34.722%209.78879%2034.6573%209.75185%2034.6233%209.71645C34.5903%209.6821%2034.5779%209.6429%2034.5779%209.61421ZM34.8039%2012.4396C36.3914%2012.4396%2037.5779%2011.1181%2037.5779%209.61421C37.5779%208.11032%2036.3914%206.78879%2034.8039%206.78879C33.2165%206.78879%2032.03%208.11033%2032.03%209.61421C32.03%2011.1181%2033.2165%2012.4396%2034.8039%2012.4396Z'%20stroke='black'%20stroke-width='3'/%3e%3cdefs%3e%3cradialGradient%20id='paint0_radial_8_241'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(9.32507%2048.2721)%20rotate(-55.4341)%20scale(53.0478%2058.532)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint1_radial_8_241'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(9.32507%2048.2721)%20rotate(-55.4341)%20scale(53.0478%2058.532)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint2_radial_8_241'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(9.32507%2048.2721)%20rotate(-55.4341)%20scale(53.0478%2058.532)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img class="w-full -z-50 relative" src="/assets/landingcomp-hg1ZOkWe.png" alt="">
+                            <img id="mascot" class="absolute bottom-[-2%] right-[32%] sm:w-[13rem] sm:h-[14rem] md:w-[16rem] md:h-[17rem] lg:w-[20rem] lg:h-[19rem] xl:w-[21rem] xl:h-[22rem] 2xl:w-[28rem] 2xl:h-[30rem] animate-[mascot_5s_infinite_ease-in-out]" src="/assets/main4.png" alt="">
+                            <a href="https://devfolio.co" target="_blank" class="">
+                                <div class="absolute bottom-[15%] bg-[#DF2B2E] px-4 xl:px-8 py-2 border-2 md:border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic translate-x-2 translate-y-2">REGISTER</div>
+                                <div class="absolute bottom-[15%] bg-[#f4e1b9] px-4 xl:px-8 py-2 border-2 md:border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic hover:translate-x-1 hover:translate-y-1 transition-transform">REGISTER</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Images and socials mobile -->
+                <div class="relative sm:hidden">
+                    <!-- mobile landing image -->
+                    <img id="moblandimg" class="w-full mx-auto" src="/assets/heroimgmob-MbyMVlZR.svg" alt="">
+                    <img id="mascot" class="absolute bottom-[10%] right-[25%] w-[60%] h-[60%] animate-[mascot_5s_infinite_ease-in-out]" src="/assets/main4.png" alt="">
+                    <a href="https://rebase01.devfolio.co" target="_blank" class="">
+                        <div class="absolute top-[25%] right-0 bg-[#DF2B2E] exsm:px-4 px-6 py-2 border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic translate-x-2 translate-y-2">REGISTER</div>
+                        <div class="absolute top-[25%] right-0 bg-[#f4e1b9] exsm:px-4 px-6 py-2 border-4 border-black font-anime sm:text-base xl:text-2xl 2xl:text-3xl italic">REGISTER</div>
+                    </a>
+                    <!-- div for socials for mobile screen -->
+                    <div class="mobsocials relative">
+                        <img id="moblanding" class=" w-[80%] sm:hidden mx-auto" src="/assets/socialmob-yxI-nX-f.png" alt="">
+                        <div class="moblinks absolute inset-0 flex justify-center items-center">
+                            <ul class="flex justify-center exsm:gap-1 verysmall:gap-3 extrasmall:gap-7">
+                                <li>
+                                    <a href="https://discord.gg/tcaxPN6CNs">
+                                        <img class="verysmall:w-[80%] h-['80%'] " src="/assets/iste.png" alt="">
+                                    </a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="https://discord.gg/tcaxPN6CNs">
+                                        <img class="verysmall:w-[70%]" src="/assets/gfg2.png" alt="">
+                                    </a>
+                                    
+                                </li>
+                                
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCvRPKamvUtnQhij5y1MF11A">
+                                        <img class="verysmall:w-[80%]" src="data:image/svg+xml,%3csvg%20width='46'%20height='29'%20viewBox='0%200%2046%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='1.03735'%20y='1.48535'%20width='44.4151'%20height='26.9057'%20rx='9.5'%20fill='%23E62117'%20stroke='black'/%3e%3cpath%20d='M27.2591%2020.9946L16.8851%2015.2117L27.2591%209.42877V20.9946Z'%20fill='white'%20stroke='black'/%3e%3c/svg%3e" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/rebase_01/">
+                                        <img class="verysmall:w-[70%]" src="data:image/svg+xml,%3csvg%20width='50'%20height='49'%20viewBox='0%200%2050%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.86627%2011.1605C4.86627%206.03649%208.85882%201.88263%2013.7839%201.88263H40.5367C45.4617%201.88263%2049.4543%206.03649%2049.4543%2011.1605V38.9942C49.4543%2044.1183%2045.4617%2048.2721%2040.5367%2048.2721H13.7839C8.85881%2048.2721%204.86627%2044.1183%204.86627%2038.9942V11.1605Z'%20fill='url(%23paint0_radial_8_241)'/%3e%3cpath%20d='M37.3518%2025.7401C37.3518%2031.5961%2032.7889%2036.3434%2027.1603%2036.3434C21.5316%2036.3434%2016.9687%2031.5961%2016.9687%2025.7401C16.9687%2019.884%2021.5316%2015.1368%2027.1603%2015.1368C32.7889%2015.1368%2037.3518%2019.884%2037.3518%2025.7401Z'%20fill='url(%23paint1_radial_8_241)'/%3e%3cpath%20d='M40.5367%2011.1605C40.5367%2011.8925%2039.9663%2012.4859%2039.2627%2012.4859C38.5591%2012.4859%2037.9888%2011.8925%2037.9888%2011.1605C37.9888%2010.4285%2038.5591%209.83512%2039.2627%209.83512C39.9663%209.83512%2040.5367%2010.4285%2040.5367%2011.1605Z'%20fill='url(%23paint2_radial_8_241)'/%3e%3cpath%20d='M36.0779%209.61421C36.0779%2010.3462%2035.5075%2010.9396%2034.8039%2010.9396C34.1003%2010.9396%2033.53%2010.3462%2033.53%209.61421C33.53%208.8822%2034.1003%208.28879%2034.8039%208.28879C35.5075%208.28879%2036.0779%208.8822%2036.0779%209.61421Z'%20fill='black'/%3e%3cpath%20d='M1.90747%209.61421C1.90747%205.26204%205.28388%201.8363%209.32507%201.8363H36.0779C40.119%201.8363%2043.4954%205.26204%2043.4954%209.61421V37.4479C43.4954%2041.8001%2040.119%2045.2258%2036.0779%2045.2258H9.32507C5.28388%2045.2258%201.90747%2041.8001%201.90747%2037.4479V9.61421ZM31.393%2024.1938C31.393%2029.2779%2027.4462%2033.2971%2022.7015%2033.2971C17.9567%2033.2971%2014.0099%2029.2779%2014.0099%2024.1938C14.0099%2019.1096%2017.9567%2015.0905%2022.7015%2015.0905C27.4462%2015.0905%2031.393%2019.1096%2031.393%2024.1938ZM22.7015%2036.2971C29.214%2036.2971%2034.393%2030.8217%2034.393%2024.1938C34.393%2017.5658%2029.214%2012.0905%2022.7015%2012.0905C16.189%2012.0905%2011.0099%2017.5658%2011.0099%2024.1938C11.0099%2030.8217%2016.189%2036.2971%2022.7015%2036.2971ZM34.5779%209.61421C34.5779%209.58551%2034.5903%209.54631%2034.6233%209.51196C34.6573%209.47657%2034.722%209.43962%2034.8039%209.43962C34.8859%209.43962%2034.9505%209.47657%2034.9846%209.51196C35.0176%209.54632%2035.03%209.58552%2035.03%209.61421C35.03%209.6429%2035.0176%209.68209%2034.9846%209.71645C34.9505%209.75185%2034.8859%209.78879%2034.8039%209.78879C34.722%209.78879%2034.6573%209.75185%2034.6233%209.71645C34.5903%209.6821%2034.5779%209.6429%2034.5779%209.61421ZM34.8039%2012.4396C36.3914%2012.4396%2037.5779%2011.1181%2037.5779%209.61421C37.5779%208.11032%2036.3914%206.78879%2034.8039%206.78879C33.2165%206.78879%2032.03%208.11033%2032.03%209.61421C32.03%2011.1181%2033.2165%2012.4396%2034.8039%2012.4396Z'%20stroke='black'%20stroke-width='3'/%3e%3cdefs%3e%3cradialGradient%20id='paint0_radial_8_241'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(9.32507%2048.2721)%20rotate(-55.4341)%20scale(53.0478%2058.532)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint1_radial_8_241'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(9.32507%2048.2721)%20rotate(-55.4341)%20scale(53.0478%2058.532)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint2_radial_8_241'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(9.32507%2048.2721)%20rotate(-55.4341)%20scale(53.0478%2058.532)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section begins here - By Iman-->
+            <div id="about" class="h-fit w-full">
+                <!-- <p id="about-text">About</p>
+      <p id="zero-one">01.</p> -->
+                <!-- Desktop About text and 01 -->
+                <div class="relative flex justify-between">
+                    <h1 class="absolute timeline-heading sm:text-[3rem] md:text-[3rem] top-[7vw] left-[4vw] extrasmall:hidden">🚀
+        </h1>
+        
+                    <h1 class="absolute font-japan text-2xl text-[#E82338] md:text-5xl page-number self-center left-[73vw] lg:left-[63vw] xl:left-[65vw] wid1:left-[63vw] wid2:left-[61vw] top-[3vw] extrasmall:hidden">01.</h1>
+                </div>
+                <!-- Mobile About text and 01 -->
+                <div class="text-[#E82338] flex justify-between mb-12 mt-12 md:mb-0 sm:hidden">
+                    <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem] text-[5rem] sm:hidden">INNOVATE 🚀</h1>
+                   
+                </div>
+                <div class="relative">
+                    <div class="absolute top-[23vw] lg:top-[17vw] w-[30%] left-[7vw] text-[1vw] extrasmall:z-10 extrasmall:text-[2vw] extrasmall:w-[60%] extrasmall:top-[10vw] extrasmall:left-[10vw]">
+                        <p id="main-paragraph">Unleash your creativity in National Level Techfest awaits your intellectual presence on 19th April and 20th April <BR><BR>
+                          We are thrilled to announce an exciting collaboration between Geeks for Geeks (GfG) and the Indian Society for Technical Education (ISTE), culminating in a dynamic and innovative hackathon. Set to take place on the vibrant campus of SRMIST Delhi NCR on April 19th and 20th
+          </p>
+                    </div>
+                </div>
+                <div id="images">
+                    <img src="data:image/svg+xml,%3csvg%20width='702'%20height='877'%20viewBox='0%200%20702%20877'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M33.9185%20862L702%20862L596%20213L33.9185%20213L33.9185%20862Z'%20fill='%23285967'%20fill-opacity='0.85'/%3e%3cpath%20d='M22.5%20874.5L689.427%20874.5L583.872%20222.5L22.5%20222.5L22.5%20874.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M22.6703%20220.384L22.6702%20177.405L22.6702%20102.413L557.789%20102.413'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e" alt="GreenBG" id="GreenBG" class="extrasmall:hidden"/>
+                    <img id="Group39" src="/assets/2k24.png" alt="Comp Pic" class="extrasmall:hidden"/>
+                </div>
+                <div id="mobile-images" class="relative sm:hidden w-[80%] left-[8vw] h-fit">
+                    <img id="GreenBGMobile" src="data:image/svg+xml,%3csvg%20width='319'%20height='339'%20viewBox='0%200%20319%20339'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.2063%206.91846L7.2063%20339L319%20286.311L319%206.91846L7.2063%206.91846Z'%20fill='%23285967'%20fill-opacity='0.85'/%3e%3cpath%20d='M2.5%202.5L2.5%20331.257L313.137%20279.224L313.137%202.5L2.5%202.5Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e" alt="GreenBGMobile" class="relative w-full left-[-5vw]"/>
+                    <img src="/assets/2k24 (3).png" alt="Mobile Comp" id="MobileComp" class="relative w-full top-[-8vw] left-[5vw]"/>
+                </div>
+            </div>
+            <!-- About section ends here -->
+            <!--Timeline begins here - by Aryan (You can call me astroneko :)-->
+            
+            <!--Timeline ends here-->
+            <!-- -----------------------Tracks section---------------------- -->
+            <!-- Tracks -->
+            
+            <!-- Prizes -->
+            <section id="prizes" class="h-fit w-full sm:mt-[4rem] md:mt-[0rem] lg:pt-16 2xl:mt-[4rem] mb-10">
+                <div class="text-[#E82338] flex justify-between">
+                    <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem]">PRIZES</h1>
+                  
+                </div>
+                <div class="flex flex-col items-center md:flex-row justify-around font-bangers text-center text-white text-3xl md:text-2xl lg:text-3xl xl:px-0 2xl:px-20">
+                    <div class="card order-2 md:order-1">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#48727E] w-72 md:w-48 lg:w-56 xl:w-72 h-40 mt-16 md:mt-10 " style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <img src="/assets/silver_prize-JRfNi9ZT.svg" alt="" class=" absolute w-24 left-0 right-0 mx-auto -top-1/2">
+                                <div class="pb-8 pt-12">
+                                    1ST RUNNER UP<br>&#x20b9;prize*
+                                </div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">*Goodies and prize money are subject to a maximum value of the specified amount.</div>
+                        </div>
+                    </div>
+                    <div class="card order-1 md:order-2">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#48727E] w-72 md:w-48 lg:w-56 xl:w-72 h-40 mt-16 md:mt-10 " style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <img src="/assets/gold_prize-S9vz7TDI.svg" alt="" class=" absolute w-24 left-0 right-0 mx-auto -top-1/2">
+                                <div class="pb-8 pt-12">
+                                    WINNER<br>&#x20b9;prize*
+                                </div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">*Goodies and prize money are subject to a maximum value of the specified amount.</div>
+                        </div>
+                    </div>
+                    <div class="card order-3 md:order-3">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#48727E] w-72 md:w-48 lg:w-56 xl:w-72 h-40 mt-16 md:mt-10 " style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <img src="/assets/bronze_prize-ISAERQCp.svg" alt="" class=" absolute w-24 left-0 right-0 mx-auto -top-1/2">
+                                <div class="pb-8 pt-12">
+                                    2ND RUNNER UP<br>&#x20b9;prize*
+                                </div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">*Goodies and prize money are subject to a maximum value of the specified amount.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---------------------PRIZE BELOW SECTION --------- -->
+                <!-- <div class="flex flex-wrap justify-center gap-8 mt-10 font-bangers text-center text-white text-4xl">
+                    <div class="card">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#0F283F] w-56 h-72" style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <div class="my-auto">BEST USE OF DEVPOD</div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">Build a project that uses DevPod to win prizes and certifications, and stand a chance to be featured on the Loft blog. Each member of the winning team gets a T-shirt.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#0F283F] w-56 h-72" style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <div class="my-auto">BEST SHARE OF DEVPOD</div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">Share about how you’re using DevPod on your socials, or write a blog post and win accessories. The winner of the best blog or social post gets Wireless In-Ear Earbuds.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#0F283F] w-56 h-72" style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <div class="my-auto">BEST POLYGON HACK</div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">Win $200 for the best hack built on Polygon and eligibility to apply for internship/full-time roles and seed funding of up to 5,000 USD for winners!</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner transition-transform duration-500 faqMobileText relative border-black border-4 bg-[#0F283F] w-56 h-72" style="transform-style: preserve-3d; perspective: 1000px">
+                            <div class="front grid place-items-center absolute w-full h-full px-8">
+                                <div class="my-auto">REPLIT TRACK</div>
+                            </div>
+                            <div class="back font-mono absolute w-full h-full text-base px-4 py-4">$50 to winning project of the hackathon (must be deployed on Replit). Replit schwags to 5 eligible submissions deployed on Replit.</div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+           <!-- COMMUNITY PARTNER SECTION -->
+           <section class="w-full border-0 border-black">
+            <div class="text-[#E82338]  flex justify-center">
+                <h1 class="timeline-heading exsm:text-[2rem] sm:text-[4rem] md:text-[4rem] lg:text-[6rem] text-nowrap  ">OUR SPONSOR </h1>
+            </div>
+            <div id="Projects" class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-16 gap-x-20  mt-10 mb-5">
+                <!-- card 1 starts here . -->
+                <div class="w-72 h-fit bg-[#48727E]   duration-500 hover:scale-105 hover:shadow-xl shadow-[10px_8px_0px_2px_#000] border-2  border-black">
+                    <div class="mt-10 mx-5 border-black bg-[#F4E1B9] border-4 h-64">
+                        <a href="#">
+                            <img src="/assets/devfolio.jpg" alt="DEVFOLIO" class="h-64 w-full object-contain "/>
+                        </a>
+                    </div>
+                    <div class="px-4 py-3 w-72">
+                        <p class="text-[1rem] font-bold  text-[#F4E1B9] " style="font-family: 'Roboto Mono', sans-serif;">DEVFOLIO</p>
+                    </div>
+                </div>
+                <!--   card 1 - Ends Here  -->
+                <!-- card 2 starts here . -->
+                <div class="w-72 h-fit bg-[#48727E]   duration-500 hover:scale-105 hover:shadow-xl shadow-[10px_8px_0px_2px_#000] border-2  border-black">
+                    <div class="mt-10 mx-5 border-black bg-[#F4E1B9] border-4 h-64 overflow-hidden ">
+                        <a href="#">
+                            <img src="/assets/poly.jpg" alt="Product" class="h-64 w-full object-fit "/>
+                        </a>
+                    </div>
+                    <div class="px-4 py-3 w-72">
+                        <p class="text-[1rem] font-bold  text-[#F4E1B9] text-center" style="font-family: 'Roboto Mono', sans-serif;">POLYGON</p>
+                    </div>
+                </div>
+                <!--   card 2 - Ends Here  -->
+                <!-- card 3 starts here . -->
+                <div class="w-72 h-fit bg-[#48727E]   duration-500 hover:scale-105 hover:shadow-xl shadow-[10px_8px_0px_2px_#000] border-2  border-black">
+                    <div class="mt-10 mx-5 border-black bg-[#F4E1B9] border-4 h-64">
+                        <a href="#">
+                            <img src="/assets/eth.jpg" alt="Product" class="h-64 w-full object-contain "/>
+                        </a>
+                    </div>
+                    <div class="px-4 py-3 w-72">
+                        <p class="text-[1rem] font-bold  text-[#F4E1B9] text-center" style="font-family: 'Roboto Mono', sans-serif;">ETHIndia</p>
+                    </div>
+                </div>
+                <!--   card 3 - Ends Here  -->
+                
+            </div>
+            <!-- Add view more button. -->
+            <button id="viewMoreBtn" class="mt-4 mx-auto block bg-[#F4E1B9]  text-black font-bold py-2 px-4 rounded" style="font-family: 'Roboto Mono', sans-serif;">
+                <div class="animate-bounce text-lg">View More
+</div>
+            </button>
+        </section>
+            
+            <!-- FAQs -->
+            <!-- <section id="faqs" class="w-full border-0 border-black">
+                <div class="text-[#E82338] flex justify-between">
+                    <h1 class="timeline-heading sm:text-[4rem] md:text-[6rem]">FAQS</h1>
+                    <h1 class="font-japan text-2xl md:text-5xl page-number self-center">06.</h1>
+                </div>
+                <!-- FAQ Desktop Pills -->
+                <!-- <div class="hidden xl:flex items-center mb-16 justify-center ">
+                    <ul class="mr-4 flex list-none flex-col flex-wrap pl-0 w-1/3 text-2xl font-bangers font-medium uppercase leading-tight text-black" role="tablist" data-te-nav-ref>
+                        <li role="presentation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-1" class="my-2 block pr-6 pb-3.5 pt-4 hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-1" data-te-toggle="pill" data-te-target="#pills-1" data-te-nav-active role="tab" aria-controls="pills-1" aria-selected="true">HOW DO I REGISTER?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-2" class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-2" data-te-toggle="pill" data-te-target="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">WHO CAN PARTICIPATE?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-3" class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-3" data-te-toggle="pill" data-te-target="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">HOW MANY TEAM MEMBERS DO I NEED?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-4" class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-4" data-te-toggle="pill" data-te-target="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">WILL THE HACKATHON BE IN-PERSON OR ONLINE?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-5" class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-5" data-te-toggle="pill" data-te-target="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">HOW MUCH ARE THE PARTICIPATION FEES?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-6" class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-6" data-te-toggle="pill" data-te-target="#pills-6" role="tab" aria-controls="pills-6" aria-selected="false">WHAT ARE THE PREREQUISITES TO PARTICIPATE IN REBASE &lt;01 &gt;?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-7" class="my-2 block pr-6 pb-3.5 pt-4 font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-7" data-te-toggle="pill" data-te-target="#pills-7" role="tab" aria-controls="pills-7" aria-selected="false">I AM A HIGH SCHOOL STUDENT. CAN I PARTICIPATE?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-8" class="my-2 block pr-6 pb-3.5 pt-4 text-2xl font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-8" data-te-toggle="pill" data-te-target="#pills-8" role="tab" aria-controls="pills-8" aria-selected="false">HOW TO GET SELECTED?</a>
+                        </li>
+                        <li role="participation" class="flex-grow border-b-4 border-red-500 border-dashed">
+                            <a href="#pills-9" class="my-2 block pr-6 pb-3.5 pt-4 text-2xl font-bangers font-medium uppercase leading-tight text-black hover:text-3xl data-[te-nav-active]:text-3xl transition-all" id="pills-tab-9" data-te-toggle="pill" data-te-target="#pills-9" role="tab" aria-controls="pills-9" aria-selected="false">IS IT FOR BEGINNERS?</a>
+                        </li>
+                    </ul>
+                    <div class="w-1/3 h-full relative grid place-items-center">
+                        <img src="/assets/faqpanda3-Bcu_jZog.svg" alt="" class="absolute animate-[bounce_3s_infinite_ease-in-out]">
+                        <img src="/assets/faqdesbox-E8oR2D5H.svg" alt="" class="w-full">
+                    </div>
+                    <!--Pills content-->
+                    <div class="my-2 w-1/3 flex flex-col self-center h-full text-white font-kosugi text-xl">
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E] sm:w-full" id="pills-1" role="tabpanel" aria-labelledby="pills-tab-1" data-te-tab-active>
+                            <div class="p-8">
+                                Register your team <a href="https://rebase01.devfolio.co/" target="_blank" rel="noopener noreferrer" class="text-black">@Devfolio.</a>
+                            </div>
+                        </div>
+                        
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-2" role="tabpanel" aria-labelledby="pills-tab-2">
+                            <div class="p-8">Literally anyone, student(graduate, undergraduate, high-school), professional, and almost
+              anyone we forgot to mention here.</div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-3" role="tabpanel" aria-labelledby="pills-tab-3">
+                            <div class="p-8">You can participate individually or in teams of 2 to 4 members. If you are participating in
+              the hackathon individually and looking for a team, we will help you in connecting to other individual
+              participants to get you a team.</div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-4" role="tabpanel" aria-labelledby="pills-tab-4">
+                            <div class="p-8">Rebase &lt;01 &gt;will be conducted in complete online mode, so you can participate from
+              anywhere without any worry.</div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-5" role="tabpanel" aria-labelledby="pills-tab-5">
+                            <div class="p-8">Rebase &lt;01 &gt;is absolutely free inclusive of resources.</div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-6" role="tabpanel" aria-labelledby="pills-tab-6">
+                            <div class="p-8">No prerequisites are required to participate in this hackathon. This event is open to
+              participants of all skill levels.</div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-7" role="tabpanel" aria-labelledby="pills-tab-7">
+                            <div class="p-8">Rebase &lt;01 &gt;welcomes everyone! It is an inclusive open to all, so anyone can join in.
+            </div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-8" role="tabpanel" aria-labelledby="pills-tab-8">
+                            <div class="p-8">Submit a good application 🙂 Make sure your essays are good, that is how you move ahead. We
+              will have:(i) An initial screening round to filter non-serious candidates and spam applications.(ii) A
+              devfolio screening round where participants from round 1 will submit proposals and will get selected.
+            </div>
+                        </div>
+                        <div class="faqMobileText hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block relative border-4 border-black bg-[#48727E]" id="pills-9" role="tabpanel" aria-labelledby="pills-tab-9">
+                            <div class="p-8">It is for EVERYBODY!! We will have mentors and resources available, along with several
+              workshops targeted for beginners.</div>
+                        </div>
+                        <!-- <div class="border-4 border-black my-8 p-8 bg-[#193248]">
+                            <div class="font-bangers text-[#F4E1B9] text-2xl">I HAVE SOME OTHER QUESTIONS...</div>
+                            <div>
+                                You can reach out to us on our <a class="text-gray-400 hover:text-white" href="https://discord.gg/tcaxPN6CNs">#HACK-INNOVATE </a>
+                                or email us at <a class="text-gray-400 hover:text-white" href="mailto:INFO@HACKINNOVATE.TECH">TEST MAIL</a>
+                                We're always ready to answer all
+              your questions
+                            </div>
+                        </div> -->
+                    </div>
+                </div> -->
+                <!-- FAQ Accordian mobile-->
+                <div id="accordionFlushExample" class="xl:hidden">
+                    
+                    <div class="flex relative w-full">
+                        <img src="/assets/faqpanda2-Wo4LoUqj.svg" alt="" class="absolute top-0 right-2 w-20 h-fit animate-[bounce_2s_infinite_ease-in-out] scale-x-[-1] "/>
+                        <div class="faqMobileText border-4 border-black my-8 p-8 bg-[#193248]">
+                            <div class="font-bangers text-[#F4E1B9] text-2xl">I HAVE SOME OTHER QUESTIONS...</div>
+                            <!-- todo:// add links -->
+                            <div class="text-white">
+                                You can reach out to us on  <a class="text-gray-400 hover:text-white"
+              email us at <a class="text-gray-400 hover:text-white" href="mailto:info@hackinnovate.com">info@hackinnovate.com</a>
+                                We're always ready to answer all
+              your questions
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+        <!-- Footer Section  -->
+        <img src="/assets/saturn-kDj8qjGy.svg" alt="" srcset="" class="absolute translate-x-15 -translate-y-20 h-44 w-64 extrasmall:h-28 extrasmall:w-28 extrasmall:-translate-y-14 sm:h-36 sm:w-36 sm:-translate-y-16 md:h-40 md:w-40 md:translate-x-2 md:-translate-y-20 lg:h-48 lg:w-48 lg:translate-x-4 z-50"/>
+        <footer class="bg-[#0F283F] h-fit md:h-[25rem] text-white sm:p-2 flex flex-col items-center justify-center lg:justify-center font-['Kosugi Maru'] md:p-2 lg:p-4 -z-10 ">
+            <div class="absolute w-full lg:mr-16 z-0">
+                <img src="/assets/starsfooter-5gPTY-xa.svg" alt="" srcset="" class="object-cover extrasmall:h-[27.2rem] lg:h-[22rem] md:h-[22rem] sm:h-[37.8rem] w-full opacity-30"/>
+            </div>
+            <div class="flex items-center lg:justify-center justify-center md:justify-evenly lg:gap-[3.5rem]  xl:gap-[4rem] 2xl:gap-[10rem] flex-shrink md:flex-row w-full pt-20 lg:pt-16  xl:pt-[3rem]  extrasmall:flex-col sm:flex-col extrasmall:p-8 z-20">
+                <div class="flex flex-row">
+                    <a href="#">
+                        <img src="/assets/2k24 (1).png" alt="" srcset="" class="w-[10rem] hover:scale-110 transition h-[8rem]  extrasmall:w-[8rem]  sm:w-[10rem] md:w-[6rem] md:h-[6rem] lg:w-[10rem] lg:h-[7rem] xl:w-[12rem]"/>
+                    </a>
+                    
+                </div>
+                <div class="flex flex-col extrasmall:text-center extrasmall:p-3 extrasmall:m-3 sm:text-center sm:p-6 sm:m-4 md:text-left md:p-0">
+                    <h1 class="text-white mb-2 text-lg extrasmall:text-2xl sm:text-3xl tracking-widest md:text-lg lg:text-xl  xl:text-2xl font-bold" style="font-family: 'Roboto Mono', sans-serif;">RESOURCES:
+        </h1>
+                    <p class="text-white text-lg extrasmall:text-lg sm:text-lg tracking-wider text-nowrap md:text-md lg:text-lg xl:text-xl font-[600] pt-2" style="font-family: 'Roboto Mono', sans-serif;">
+                        <a target="_blank" href="https://google.com">Innovate 2k24</a>
+                    </p>
+                    <p class="text-white text-lg extrasmall:text-lg sm:text-lg tracking-wider text-nowrap md:text-md lg:text-lg xl:text-xl font-[600] pt-2" style="font-family: 'Roboto Mono', sans-serif;">
+                        <a target="_blank" href="https://google.com" class="hover:text-gray-500 transition">ISTE</a>
+                    </p>
+                    <p class="text-white text-lg extrasmall:text-lg sm:text-lg tracking-wider text-nowrap md:text-md lg:text-lg xl:text-xl font-[600] pt-2" style="font-family: 'Roboto Mono', sans-serif;">
+                        <a target="_blank" href="https://google.com" class="hover:text-gray-500 transition">GFG</a>
+                    </p>
+                    <p class="text-white text-lg extrasmall:text-lg sm:text-lg tracking-wider text-nowrap md:text-md lg:text-lg xl:text-xl font-[600] pt-2" style="font-family: 'Roboto Mono', sans-serif;">
+                        <a target="_blank" href="https://google.com" class="hover:text-gray-500 transition">SRM-NCR</a>
+                    </p>
+                    <!-- <p
+          class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl pt-2 ">
+       Community Partners
+        </p>
+        <p
+          class="text-white text-lg extrasmall:text-xl sm:text-2xl tracking-wider text-nowrap md:text-xl kosigu lg:text-2xl xl:text-3xl pt-2 ">
+          Hackers guide
+        </p> -->
+                </div>
+                <div class="text-center">
+                    <h3 class="text-white mb-2 text-lg sm:text-xl text-nowrap md:text-lg lg:text-xl extrasmall:text-xl xl:text-2xl font-bold tracking-wider p-2" style="font-family: 'Roboto Mono', sans-serif;">Connect with us:
+        </h3>
+                    <div id="footsocial" class="flex items-center justify-center space-x-4">
+                        <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAeCAYAAACxHzfjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARgSURBVHgB1VhNTBRJFH5rTJCDw7CJJMtCtgUPLnNg0IUshoTeCOG0ipvoDac97YHdRI56mfEiV4hy8KTojQtEL/6GMVE0KOJBkAPoJCImcmDEA3Aav6+7StumZqbHRIhf8lIzVf2qvn6v6r1XLVIabEgSMg5ZgZwOqfcaMg25DHEglpSAn0I8Y0MSkO6auuZoVfXvUrO32R24fu3/LJq/IGyjSjSyShK1dc2p9r/PyPLSnMzP3JPld3OyuvL2OcYGIWlIRr6RJImlQMza13BYYs3/SNmu3V89MPN0VJ49uCob66sYi0hZ+ZfxjbWPbn+k8lfpOtEvFWj9eLMwKTNTo7IA0hvrH6+gq0+9VGiSVll5ZPpIz4VobX2LfE+AoEzcvijTD68OiEd0E3bk0U0daOv57gQJeudQZy8tzv1tm54xkXSgkGjt+E+2CvCadB0/z5+XTeMmksnWjl7ZatBrNXUtlhgiRpCkg5Noxf44JtsBZZxksD9IMtnauXVuDkJZk2HM8ff7SdrYixYeku2EsmbC3+cn6WzHXgyC1sSJt8V30v0kj9bUb68VNZraTrKx9f+dqrVxYKLBrBAEUpmkb/TLe6Q3ho2qX/aLfeTMpkzkx+KrSXl0Z0g+QJc6iL8SO1j4YNZiyz2WoaP4meJ/bcnu+liHFCM4cinB3HsOv/cuL71sQlobZh+zhgnzs/eok33zavKU1rk1cjZ9c+RswbWUy+OiagFNsrGqen9BRVoDC/Wpt8tAWCA4WHjs2YNho076ej+bU5ArPp1js1OjGVq4GFGg20/S3oPqphBYDKjFghhcXHiyqRPkdaUzFhhiETHIaqgQUNiwiWuS8T3YW4X2FV0tniVMVUp2fW11U+f6mrsFPogZ2Q2Djh8R73xYmmR0V/nuogp4CSpEDcNxk37Fz+4ijXmmtCNFDmmV59lGTdIqpkCosBBMWSSdbDCcVs6pskdQx4K0NxRJvcqz0ZJIHgRJbAsmf30F4O/p1s7evLm+68R5kk35dJJap1i4Y7jSJHdKSFCp5/Qoq3EHJ9NhHy1YqOYkkeP/DsviwqSrwznqUeWXWqeGJqlBq5VSJZFoRYk6QeyQHwAkmVEhJi90OiwWgMOA2enR3SEdd0OB7kbaeuISyXeASJDBlzdDPrMvdtiVsGUdic2/uCuzU2Py/t0cY6R7IJhAmP9NmECGEy9Dfb4tOuIVvFa+cm3izkV3EbxMRilXQtq5UEVltY6ln59fXVlyr7QsRqDDJHAf8hskzmzCO5TpAOmCBPn+vuKV8V9pLUjKvYTh9pavUhlKttAyOh8TtnihwpKvg31GvAz1XL5c/sf/7Oi1Dxmqf3qS5LANqNPnm99472a+HADZdpJl2aS3Ad0N13PRJvk2MNOMM5Rpq9NyM0/HNDl+0RiQPB8JjBOK9zY5WDWHK2cOE+ekxO84BgwcaDuZw9bKwQCcj9+UUmJOuaFhibc30hL+A1UhkAy9QYvZYRQ+AUBQlcYGvSOVAAAAAElFTkSuQmCC" alt="Discord" class="cursor-pointer lg:h-[2.5rem] xl:h-[3.5rem] hover:scale-110"/>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="data:image/svg+xml,%3csvg%20width='46'%20height='29'%20viewBox='0%200%2046%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='1.03735'%20y='1.48535'%20width='44.4151'%20height='26.9057'%20rx='9.5'%20fill='%23E62117'%20stroke='black'/%3e%3cpath%20d='M27.2591%2020.9946L16.8851%2015.2117L27.2591%209.42877V20.9946Z'%20fill='white'%20stroke='black'/%3e%3c/svg%3e" alt="YouTube" class="cursor-pointer lg:h-[2.2rem] xl:h-[3.2rem] hover:scale-110"/>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="data:image/svg+xml,%3csvg%20width='29'%20height='30'%20viewBox='0%200%2029%2030'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.952515%206.42591C0.952515%203.29173%203.3946%200.750977%206.40707%200.750977H22.7707C25.7832%200.750977%2028.2253%203.29173%2028.2253%206.42591V23.4507C28.2253%2026.5849%2025.7832%2029.1257%2022.7707%2029.1257H6.40707C3.3946%2029.1257%200.952515%2026.5849%200.952515%2023.4507V6.42591Z'%20fill='url(%23paint0_radial_145_15)'/%3e%3cpath%20d='M20.8227%2015.3437C20.8227%2018.9256%2018.0317%2021.8293%2014.5889%2021.8293C11.1461%2021.8293%208.35512%2018.9256%208.35512%2015.3437C8.35512%2011.7618%2011.1461%208.85803%2014.5889%208.85803C18.0317%208.85803%2020.8227%2011.7618%2020.8227%2015.3437Z'%20fill='url(%23paint1_radial_145_15)'/%3e%3cpath%20d='M22.7707%206.42591C22.7707%206.87365%2022.4219%207.23662%2021.9915%207.23662C21.5611%207.23662%2021.2123%206.87365%2021.2123%206.42591C21.2123%205.97817%2021.5611%205.61521%2021.9915%205.61521C22.4219%205.61521%2022.7707%205.97817%2022.7707%206.42591Z'%20fill='url(%23paint2_radial_145_15)'/%3e%3cpath%20d='M22.7707%206.42591C22.7707%206.87366%2022.4219%207.23662%2021.9915%207.23662C21.5611%207.23662%2021.2123%206.87366%2021.2123%206.42591C21.2123%205.97817%2021.5611%205.61521%2021.9915%205.61521C22.4219%205.61521%2022.7707%205.97817%2022.7707%206.42591Z'%20fill='black'/%3e%3cpath%20d='M1.45251%206.42591C1.45251%203.54902%203.68922%201.25098%206.40707%201.25098H22.7707C25.4886%201.25098%2027.7253%203.54903%2027.7253%206.42591V23.4507C27.7253%2026.3276%2025.4886%2028.6257%2022.7707%2028.6257H6.40707C3.68922%2028.6257%201.45251%2026.3276%201.45251%2023.4507V6.42591ZM20.3227%2015.3437C20.3227%2018.6683%2017.7371%2021.3293%2014.5889%2021.3293C11.4407%2021.3293%208.85512%2018.6683%208.85512%2015.3437C8.85512%2012.019%2011.4407%209.35803%2014.5889%209.35803C17.7371%209.35803%2020.3227%2012.019%2020.3227%2015.3437ZM14.5889%2022.3293C18.3263%2022.3293%2021.3227%2019.1829%2021.3227%2015.3437C21.3227%2011.5045%2018.3263%208.35803%2014.5889%208.35803C10.8515%208.35803%207.85512%2011.5045%207.85512%2015.3437C7.85512%2019.1829%2010.8515%2022.3293%2014.5889%2022.3293ZM22.2707%206.42591C22.2707%206.61636%2022.1272%206.73662%2021.9915%206.73662C21.8558%206.73662%2021.7123%206.61636%2021.7123%206.42591C21.7123%206.23547%2021.8558%206.11521%2021.9915%206.11521C22.1272%206.11521%2022.2707%206.23547%2022.2707%206.42591ZM21.9915%207.73662C22.7165%207.73662%2023.2707%207.13095%2023.2707%206.42591C23.2707%205.72088%2022.7165%205.11521%2021.9915%205.11521C21.2665%205.11521%2020.7123%205.72088%2020.7123%206.42591C20.7123%207.13095%2021.2665%207.73662%2021.9915%207.73662Z'%20stroke='black'/%3e%3cdefs%3e%3cradialGradient%20id='paint0_radial_145_15'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(3.67979%2029.1257)%20rotate(-55.4341)%20scale(32.4473%2035.8018)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint1_radial_145_15'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(3.67979%2029.1257)%20rotate(-55.4341)%20scale(32.4473%2035.8018)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint2_radial_145_15'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(3.67979%2029.1257)%20rotate(-55.4341)%20scale(32.4473%2035.8018)'%3e%3cstop%20stop-color='%23FCAF45'/%3e%3cstop%20offset='0.380108'%20stop-color='%23E2356A'/%3e%3cstop%20offset='0.380208'%20stop-color='%23E1306C'/%3e%3cstop%20offset='0.78125'%20stop-color='%23DF306D'/%3e%3cstop%20offset='1'%20stop-color='%23833AB4'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e" alt="Instagram" class="cursor-pointer lg:h-[2.5rem] xl:h-[3.5rem] hover:scale-110"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white mt-7 m-6 text-lg extrasmall:text-center extrasmall:text-xl extrasmall:mt-3 tracking-widest text-nowrap lg:text-xl  xl:text-2xl md:text-lg sm:text-xl" style="font-family: 'Roboto Mono', sans-serif;">&#169;HACK-INNOVATE SRMIST-NCR
+    </div>
+            <img src="/assets/metroids-I-ORZ2Gs.svg" alt="" class="right-0 absolute w-56 h-72 translate-y-10 extrasmall:w-28 extrasmall:h-36 sm:w-44 sm:h-56 xl:h-80 xl:w-72"/>
+        </footer>
+        <script>
+
+            var timelineElementWidth = 338;
+            var timelineWrapperWidth = document.querySelector('.timeline-wrapper').clientWidth;
+            var defaultShiftWidth = timelineWrapperWidth < timelineElementWidth ? timelineElementWidth / 4 : 0;
+            document.querySelector('.timeline-wrapper').scrollBy({
+                left: defaultShiftWidth,
+                behavior: 'smooth'
+            });
+
+            document.querySelector('.prev').addEventListener('click', ()=>{
+                var timelineWrapperWidth = document.querySelector('.timeline-wrapper').clientWidth;
+                var defaultShiftWidth = timelineWrapperWidth < timelineElementWidth ? timelineElementWidth / 4 : 0;
+                var leftPosition = defaultShiftWidth + Math.max(0, Math.floor((document.querySelector('.timeline-wrapper').scrollLeft - timelineElementWidth / 2) / timelineElementWidth) * timelineElementWidth);
+                document.querySelector('.timeline-wrapper').scrollTo({
+                    left: leftPosition,
+                    behavior: 'smooth'
+                });
+            }
+            );
+            document.querySelector('.next').addEventListener('click', ()=>{
+                var timelineWrapperWidth = document.querySelector('.timeline-wrapper').clientWidth;
+                var defaultShiftWidth = timelineWrapperWidth < timelineElementWidth ? timelineElementWidth / 4 : 0;
+                var leftPosition = defaultShiftWidth + Math.min(document.querySelector('.timeline-wrapper').scrollWidth - timelineWrapperWidth, Math.ceil((document.querySelector('.timeline-wrapper').scrollLeft + timelineElementWidth / 2) / timelineElementWidth) * timelineElementWidth);
+                document.querySelector('.timeline-wrapper').scrollTo({
+                    left: leftPosition,
+                    behavior: 'smooth'
+                });
+            }
+            );
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Get all the cards
+                const cards = document.querySelectorAll('.w-72');
+
+                // Get the viewport width
+                const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+                // Define the number of initially visible cards based on viewport width
+                let visibleCardCount;
+                if (viewportWidth < 1280) {
+                    // Adjust this value as needed
+                    visibleCardCount = 4;
+                    // Set visible card count for smaller screens
+                } else {
+                    visibleCardCount = 6;
+                    // Set visible card count for larger screens
+                }
+
+                // Hide cards from index visibleCardCount onwards
+                for (let i = visibleCardCount; i < cards.length; i++) {
+                    cards[i].style.display = 'none';
+                }
+
+                // Get the "View More" button
+                const viewMoreBtn = document.getElementById('viewMoreBtn');
+
+                // Add click event listener to the button
+                viewMoreBtn.addEventListener('click', function() {
+                    // Toggle the display of hidden cards
+                    for (let i = visibleCardCount; i < cards.length; i++) {
+                        if (cards[i].style.display === 'none') {
+                            cards[i].style.display = 'block';
+                            viewMoreBtn.textContent = 'View Less';
+                        } else {
+                            cards[i].style.display = 'none';
+                            viewMoreBtn.textContent = 'View More';
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
